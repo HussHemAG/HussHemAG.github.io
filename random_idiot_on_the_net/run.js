@@ -233,7 +233,7 @@ function proceed() {
 
   // Delay the redirection by 1000 milliseconds (1 second)
   setTimeout(function () {
-    location.replace("/random_idiot_on_the_net/1.html");
+    location.replace("/random_idiot_on_the_net/1");
   }, 1000);
 }
 
