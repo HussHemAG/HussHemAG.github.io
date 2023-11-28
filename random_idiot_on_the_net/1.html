@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gradient-to-br from-[#EC1187] to-[#FF8D10] w-screen h-screen block">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>@random_idiot_on_the_net</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@300,0,600;0,700;1,400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,400;0,700;1,600&display=swap');
+
+        * {
+            font-family: 'Arimo', Arial, Helvetica, sans-serif;
+        }
+
+        @keyframes animate-shake {
+
+            0%,
+            10%,
+            65%,
+            100% {
+                transform: rotate(0deg) scale(1.0);
+            }
+
+            30%,
+            40% {
+                transform: rotate(-1deg) scale(1.05);
+            }
+
+            35%,
+            45% {
+                transform: rotate(1deg) scale(1.05);
+            }
+        }
+
+        .animate-shake {
+            animation: animate-shake 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="max-w-[640px] mx-auto w-[85%] flex justify-center gap-2 flex-col">
+        <div class="relative mt-10 flex flex-col">
+            <div class="bg-white flex items-center gap-3 p-4 pb-3 px-4 rounded-t-[32px]">
+                <img src="https://media.discordapp.net/attachments/1117354276113625170/1178650591774396477/WhatsApp_Image_2023-11-27_at_16.26.26_493d7c87.jpg?ex=6576eae7&is=656475e7&hm=84c9a9ae6765079aca63574c256c23ca2bff3c866fddd78ee9ec8b708de70d3b&=&format=webp"
+                    class="rounded-full w-10">
+                <div>
+                    <p class="-mb-1 text-[14px]">@random_idiot_on_the_net</p>
+                    <p class="text-[14px] font-bold">send me anonymous messages!</p>
+                </div>
+            </div>
+            <textarea
+                class="bg-[rgba(255,255,255,0.4)] w-full rounded-b-[24px] font-semibold placeholder:font-bold placeholder:text-black placeholder:opacity-30 text-xl focus:outline-none focus:shadow-none p-6 py-3 overflow-auto h-36"
+                id="inputtext" placeholder="send me anonymous messages..."></textarea>
+            <button class="bg-[rgba(255,255,255,0.4)] p-2 rounded-full absolute bottom-3 right-3 text-xl"
+                onclick=randomtext()>🎲</button>
+        </div>
+        <p class="text-center text-white mt-2 text-sm">🔒 anonymous q&a</p>
+        <button
+            class="bg-black text-white mt-2  items-center justify-center rounded-full text-lg font-bold shadow-lg h-16 cursor-pointer hidden"
+            id="sendButton" onclick=send()>Send!</button>
+    </div>
+    <div
+        class="bottom-8 absolute w-[85%] max-w-[640px] flex flex-col justify-center items-center mx-auto pb-9 left-0 right-0">
+        <p class="text-white font-bold text-center" id="counter">👇 290 people just tapped the button 👇</p>
+        <button
+            class="bg-black text-white mt-2 w-full flex items-center justify-center rounded-full text-lg font-bold h-16 cursor-pointer animate-shake"
+            onclick=redirect()>
+            Get your own messages!
+        </button>
+        <div class="flex gap-3 text-xs mt-3 text-[rgba(255,255,255,0.5)] font-bold">
+            <a>Terms</a>
+            <a>Privacy</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="run.js" defer></script>
+</body>
+
+</html>
