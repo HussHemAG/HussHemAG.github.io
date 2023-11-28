@@ -233,7 +233,7 @@ function proceed() {
 
   // Delay the redirection by 1000 milliseconds (1 second)
   setTimeout(function () {
-    location.replace("/potatowithahatto/1.html");
+    location.replace("/potatowithahatto/1");
   }, 1000);
 }
 
