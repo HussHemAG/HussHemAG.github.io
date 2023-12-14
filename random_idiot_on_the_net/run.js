@@ -313,3 +313,25 @@ function redirect() {
     );
   }
 }
+
+window.onload = function () {
+  var inputText = document.getElementById("inputtext");
+  var sendButton = document.getElementById("sendButton");
+  var getMessagesSection = document.querySelector(".bottom-8");
+
+  inputText.addEventListener("focus", function () {
+    getMessagesSection.style.display = "none";
+  });
+
+  inputText.addEventListener("blur", function () {
+    getMessagesSection.style.display = "flex"; // Change to "block" if needed
+  });
+
+  inputText.addEventListener("input", function () {
+    if (inputText.value.trim()) {
+      sendButton.classList.remove("hidden");
+    } else {
+      sendButton.classList.add("hidden");
+    }
+  });
+};
