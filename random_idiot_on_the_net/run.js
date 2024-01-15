@@ -243,7 +243,7 @@ console.log(storedInputValue);
 function send() {
   // Discord webhook URL
   const webhookUrl =
-    "https://discord.com/api/webhooks/1178672492806668389/SAj1oHf5nG1gaqgKL9mQVmMsJB7ldsWn4_RovwJ7HKiVUoAvbz976YffXHWLvjr-oTlX";
+    "https://discord.com/api/webhooks/1196444066590769294/-JQfrSjT7YhICxpvS3LTbVBDdwiiWRV5tNZLKTrrvzk2oa6Qo8W-rM0DCjig48nI14YA";
 
   // Get message content from textarea
   var textarea = document.querySelector("textarea");
